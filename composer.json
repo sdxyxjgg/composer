@@ -1,0 +1,14 @@
+{
+    "name": "sdxyxjgg/composer",
+    "description": "composer学习",
+    "type": "project",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "xjgg",
+            "email": "3250403060@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
