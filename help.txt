@@ -33,3 +33,4 @@ Payload URL: https://packagist.org/api/github?username=sdxyxjgg
 Content Type: application/json
 Secret: your Packagist API Token
 Which events? Just the push event is enough.
+注意https://packagist.org中文名字的文件就会变成没有名字，所以以后最好不要使用中文名字
