@@ -1,0 +1,48 @@
+# 设置版本号
+git tag v1.0.0
+ 
+# 推送源码
+git push
+ 
+# 推送版本号
+git push origin --tags
+
+#为稳定版本打标签 1.0
+git tag v1.0 
+
+#推送标签到GITHUB
+git push --tags
+
+
+先
+Git init    //因为文件夹里面有内容，git init 会不成功
+
+国内镜像全局配置
+composer config -g repo.packagist composer https://packagist.phpcomposer.com
+取消
+composer config -g --unset repos.packagist
+
+项目配置
+composer config repo.packagist composer https://packagist.phpcomposer.com
+取消
+composer config --unset repos.packagist
+
+
+初始化
+cd composer
+composer init
+
+下载
+mkdir test1
+composer create-project sdxyxjgg/composer test1 dev-master --prefer-dist
+实现git自动推送
+Payload URL: https://packagist.org/api/github?username=sdxyxjgg
+Content Type: application/json
+Secret: your Packagist API Token
+Which events? Just the push event is enough.
+注意https://packagist.org中文名字的文件就会变成没有名字，所以以后最好不要使用中文名字
+指定版本下载
+composer create-project laravel / laravel = 4.1.27 your-project-name --prefer-dist 
+
+
+注意改完composer.json之后要在命令行composer dump一下
